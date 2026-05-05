@@ -45,7 +45,7 @@ const SidePanel = ({doctor}) => {
 
       if(currentYear <= selectedYear){      
         if(startingTime <= selectedTime && endingTime >= selectedTime){
-          axios.post('https://medicare-server-ashy.vercel.app/api/v1/book-appointment', {
+          axios.post('https://medicare-server-ashy.vercel.app/api/v1/book-appointment', {          
         id,
         doctorId: doctor._id,
         userId: user._id,

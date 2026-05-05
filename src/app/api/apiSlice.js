@@ -7,7 +7,7 @@ let  token;
 
 // Get  token and set token as  header bearer
 const baseQuery = fetchBaseQuery({        
-    baseUrl: "https://medicare-server-ashy.vercel.app/api/v1/",            
+    baseUrl: "https://medicare-server-ashy.vercel.app/api/v1/",             
     // baseUrl: "http://localhost:5000/api/v1/",        
     prepareHeaders: (headers) => {        
         if (token) {
