@@ -40,8 +40,6 @@ const Menu = ({setOpen,  open}) => {
   const user =  useSelector(selectCurrentUser)
   const role =  useSelector(selectCurrentRole)
 
-  console.log(open)
-  
   return ( <>
 
      <div className='h-[100svh] relative'>
