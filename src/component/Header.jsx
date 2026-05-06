@@ -1,5 +1,4 @@
-import React, { useContext, useState } from 'react'
-// import logo from '../assets/images/logo.png'
+import React, { useState } from 'react'
 import logo from '../assets/images/pluslogo.png'
 import { Link, NavLink } from 'react-router-dom'
 
@@ -7,7 +6,6 @@ import { BiMenu } from 'react-icons/bi'
 import Menu from './Menu'
 
 
-import { ThemeContext } from 'context/ThemeContext'
 import DropdownMenu from './DropdownMenu'
 import { useSelector } from 'react-redux'
 import { selectCurrentToken, selectCurrentUser } from 'features/auth/authSlice'

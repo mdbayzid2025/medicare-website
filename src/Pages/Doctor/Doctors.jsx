@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import doctorsData from '../../assets/data/doctorsData'
 import star from '../../assets/images/Star.png'
 import { BsArrowRight } from 'react-icons/bs'
 import { Link, useSearchParams } from 'react-router-dom'
@@ -8,7 +7,7 @@ import Loader from 'component/Loader'
 import { useGetDoctorsQuery } from 'features/doctor/doctorApiSlice'
 
 const Doctors = () => {
-  const [queryParams, setQueryParams] = useSearchParams()
+  const [queryParams] = useSearchParams()
   const { data, isError, isLoading } = useGetDoctorsQuery()
   const [doctors, setDoctors] = useState(null)
   const [searchInput, setSearchInput] = useState("")

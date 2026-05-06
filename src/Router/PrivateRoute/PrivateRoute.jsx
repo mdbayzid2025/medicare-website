@@ -1,8 +1,7 @@
 
-import { selectCurrentToken, selectCurrentRole, logOut } from 'features/auth/authSlice';
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { Navigate, Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { selectCurrentToken, selectCurrentRole } from 'features/auth/authSlice';
+import { useSelector } from 'react-redux';
+import { Navigate, useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 

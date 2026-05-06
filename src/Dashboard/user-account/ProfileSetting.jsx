@@ -1,13 +1,10 @@
-import { authContext } from 'context/AuthContext'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ClimbingBoxLoader, HashLoader } from 'react-spinners'
+import { HashLoader } from 'react-spinners'
 import { toast } from 'react-toastify'
 import imgUploadToImgBB from 'utils/uploadImage'
 import avatar from '../../assets/images/avatar-icon.png'
 import { useUpdateUserMutation } from 'features/users/userApiSlice'
-import { useDispatch, useSelector } from 'react-redux'
-import { selectCurrentUser } from 'features/auth/authSlice'
 
 const initialFormData  =
   {
@@ -23,10 +20,8 @@ const initialFormData  =
 
 const ProfileSetting = ({user, tab, setTab}) => {
   const [updateUser, { isLoading }] = useUpdateUserMutation()
-  const [loading, setLoading] = useState(false);
   const [previewUrl, setPreviewUrl] = useState("")
   const [formData, setFormData] = useState(initialFormData)
-  // const dispatch  = useDispatch()
       
   useEffect(()=>{
     if(user){        
@@ -38,8 +33,8 @@ const ProfileSetting = ({user, tab, setTab}) => {
         bloodType: user?.bloodType || "",        
       })
     }
-  },[])
-  const navigate = useNavigate()
+  },[user])
+
 
   const handleInputChange = e => {
     setFormData({...formData, [e.target.name]: e.target.value})

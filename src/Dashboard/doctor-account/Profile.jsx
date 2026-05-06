@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 
 import {BsTrash} from 'react-icons/bs'
 import Qualification from './Qualification'
-import TimePicker from 'react-time-picker'
-import Slots from './Slots'
 import Experience from './Experience'
 import { HashLoader } from 'react-spinners'
 import { toast } from 'react-toastify'
@@ -33,7 +31,6 @@ const initialFormData = {
 
 const Profile = ({setTab, user}) => {
 
-  const navigate = useNavigate()
   // API
   const [updateDoctor] = useUpdateDoctorMutation()
   
@@ -58,7 +55,7 @@ const Profile = ({setTab, user}) => {
       email: user.email,
       gender: "male",
     })
-  },[])
+  },[user.name, user.email, formData])
   
 
   const addQualification = () => {

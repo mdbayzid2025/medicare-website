@@ -3,10 +3,8 @@ import { useContext, useEffect, useState } from 'react';
 import MyBooking from './MyBooking';
 import ProfileSetting from './ProfileSetting';
 import Loader from 'component/Loader';
-import { authContext } from 'context/AuthContext';
-import { useGetSingleUserQuery } from 'features/users/userApiSlice';
-import { useDispatch, useSelector } from 'react-redux';
-import { logOut, selectCurrentUser } from 'features/auth/authSlice';
+import { useDispatch } from 'react-redux';
+import { logOut } from 'features/auth/authSlice';
 import { useParams } from 'react-router-dom';
 
 

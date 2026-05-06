@@ -20,7 +20,7 @@ useEffect(()=>{
     if(faqData){
         setItems(faqData)
     }
-},[faqData])
+},[])
 
     const handleSeeAnswer = (id, isSelect) => {
 
