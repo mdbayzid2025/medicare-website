@@ -1,8 +1,7 @@
-import { authContext } from 'context/AuthContext'
 import { logOut, selectCurrentRole, selectCurrentUser } from 'features/auth/authSlice'
-import React, { useContext } from 'react'
+import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const DropdownMenu = ({ openMenu, setOpenMenu, }) => {
   // const {dispatch, user, role} = useContext(authContext)
@@ -25,7 +24,7 @@ const DropdownMenu = ({ openMenu, setOpenMenu, }) => {
       </div>
       <ul className="">
         <li>
-          <a href={`${role == "patient" ? "/users" : "/doctors"}/profile/${user._id}`} className="block px-4 py-2 mb-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Profile</a>
+          <a href={`${role === "patient" ? "/users" : "/doctors"}/profile/${user._id}`} className="block px-4 py-2 mb-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Profile</a>
         </li>
       </ul>
       <button

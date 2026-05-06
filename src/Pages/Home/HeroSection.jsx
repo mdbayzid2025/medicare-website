@@ -1,7 +1,4 @@
 import React from 'react'
-import img1 from '../../assets/images/hero-img01.png'
-import img2 from '../../assets/images/hero-img02.png'
-import img3 from '../../assets/images/hero-img03.png'
 import { Link } from 'react-router-dom'
 import { IoMdStar } from "react-icons/io";
 
@@ -80,7 +77,7 @@ HeroSection = () => {
     />
     <a
       className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-white bg-gray-400 text-xs font-medium text-white hover:bg-gray-500 dark:border-gray-800"
-      href="#"
+      href="/#"
     >
       +3
     </a>

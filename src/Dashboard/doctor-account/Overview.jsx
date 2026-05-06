@@ -1,5 +1,5 @@
 
-import React, { useContext } from 'react'
+import React from 'react'
 import star from '../../assets/images/Star.png'
 import DoctorAbout from 'Pages/Doctor/DoctorAbout'
 

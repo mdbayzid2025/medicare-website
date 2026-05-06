@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import avatar from '../../assets/images/avatar-icon.png'
 import signUpImg from '../../assets/images/signup.gif'
 import imgUploadToImgBB from 'utils/uploadImage'
