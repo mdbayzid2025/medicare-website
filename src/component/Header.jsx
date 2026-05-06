@@ -2,15 +2,15 @@ import React, { useContext, useState } from 'react'
 // import logo from '../assets/images/logo.png'
 import logo from '../assets/images/pluslogo.png'
 import { Link, NavLink } from 'react-router-dom'
-import avatar from '../assets/images/avatar-icon.png'
+
 import { BiMenu } from 'react-icons/bi'
 import Menu from './Menu'
 
-import { CiLight, CiDark } from 'react-icons/ci'
+
 import { ThemeContext } from 'context/ThemeContext'
 import DropdownMenu from './DropdownMenu'
 import { useSelector } from 'react-redux'
-import { logOut, selectCurrentRole, selectCurrentToken, selectCurrentUser } from 'features/auth/authSlice'
+import { selectCurrentToken, selectCurrentUser } from 'features/auth/authSlice'
 // import bg from '../assets/images/header-bg.png'
 
 const navLinks = [
@@ -48,7 +48,7 @@ const Header = () => {
     window.addEventListener("scroll", onChange)
 
 
-    const { theme, themeToggle } = useContext(ThemeContext)
+    // const { theme, themeToggle } = useContext(ThemeContext)
     const user = useSelector(selectCurrentUser)
     const token = useSelector(selectCurrentToken)
     return (

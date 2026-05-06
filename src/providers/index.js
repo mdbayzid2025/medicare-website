@@ -1,5 +1,3 @@
-import { AuthContextProvider } from "context/AuthContext"
-import AuthProvider from "context/AuthProvider"
 import { ThemeProvider } from "context/ThemeContext"
 
 const Providers = ({children}) =>{

@@ -66,7 +66,7 @@ const Menu = ({setOpen,  open}) => {
 
                 <NavLink  
                 onClick={()=>setOpen(!open)}
-                to={`${role == "patient" ? "/users" : "/doctors" }/profile/${user._id}`} className={navClass => navClass.isActive ? "text-[var(--primary-color)] text-lg  font-[600] text-center  flex items-center gap-2 py-3 px-2 bg-blue-200 mx-5"
+                to={`${role === "patient" ? "/users" : "/doctors" }/profile/${user._id}`} className={navClass => navClass.isActive ? "text-[var(--primary-color)] text-lg  font-[600] text-center  flex items-center gap-2 py-3 px-2 bg-blue-200 mx-5"
                     : "px-2 text-lg text-textColor font-[500]  text-center flex items-center gap-12 hover:bg-blue-200 py-3 hover:blue-200 mx-5" } >
                       <span><CgProfile /></span>
                       Profile
