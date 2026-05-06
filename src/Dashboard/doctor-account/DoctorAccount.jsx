@@ -1,8 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Overview from './Overview';
 import DoctorAppointment from './DoctorAppointment';
 import Profile from './Profile';
-import { authContext } from 'context/AuthContext';
 import { useGetDoctorProfileQuery } from 'features/doctor/doctorApiSlice';
 import { useParams } from 'react-router-dom';
 import Loader from 'component/Loader';

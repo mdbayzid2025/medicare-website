@@ -21,7 +21,7 @@ export const apiSlice = createApi({
     // baseQuery: baseQueryWithReauth,
     baseQuery: async (args, api, extraOptions) => {
         token = localStorage.getItem("accessToken")
-        const result = await baseQuery(args, api, extraOptions);
+        let result = await baseQuery(args, api, extraOptions);
         if (result?.error?.status === 401) {
             token = localStorage.getItem("refreshToken")
             const refreshResult = await baseQuery({

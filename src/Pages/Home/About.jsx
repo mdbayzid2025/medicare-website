@@ -1,8 +1,6 @@
 import React from 'react'
 import img from '../../assets/images/about.png'
 import card from '../../assets/images/about-card.png'
-import { useSelector } from 'react-redux'
-import { selectCurrentRole, selectCurrentToken, selectCurrentUser } from 'features/auth/authSlice'
 
 const About = ( ) => {
     

@@ -25,12 +25,7 @@ const SidePanel = ({ doctor }) => {
 
     // Extract year, month, and day from both dates
     var currentYear = currentDate.getFullYear();
-    var currentMonth = currentDate.getMonth() + 1; // Adding 1 because months are zero-based (0-11)
-    var currentDay = currentDate.getDate();
-
     var selectedYear = selectedDate.getFullYear();
-    var selectedMonth = selectedDate.getMonth() + 1;
-    var selectedDay = selectedDate.getDate();
 
     if (currentYear <= selectedYear) {
       if (startingTime <= selectedTime && endingTime >= selectedTime) {

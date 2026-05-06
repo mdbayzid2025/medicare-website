@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import avatar from '../../assets/images/avatar-icon.png'
 import star from '../../assets/images/Star.png'
 import DoctorAbout from './DoctorAbout'
 import Feedback from './Feedback'
@@ -7,8 +6,6 @@ import SidePanel from './SidePanel'
 import { useParams } from 'react-router-dom'
 import Loader from 'component/Loader'
 import { useGetSingleDoctorQuery } from 'features/doctor/doctorApiSlice'
-import  HashLoader  from 'react-spinners/HashLoader'
-import { toast } from 'react-toastify'
 
 
 
@@ -64,13 +61,13 @@ const DoctorDetails = () => {
           <div className="mt-12 border-b border-solid border-[#0066dd34]">
           <button 
             onClick={()=>setTab("about")}
-          className={`${tab == "about" && "font-bold border-b-2 border-solid"} py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor `}>
+          className={`${tab === "about" && "font-bold border-b-2 border-solid"} py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor `}>
             About
           </button>
 
           <button 
             onClick={()=>setTab("feedback")}
-            className={`${tab == "feedback" && "font-bold border-b-2 border-solid"} py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor `}>
+            className={`${tab === "feedback" && "font-bold border-b-2 border-solid"} py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor `}>
             Feedback
           </button>
           </div>

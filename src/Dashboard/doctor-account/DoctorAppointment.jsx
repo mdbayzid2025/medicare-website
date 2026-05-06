@@ -38,7 +38,7 @@ const DoctorAppointment = ({user}) => {
 
                   </div>
                 </td>
-                <td scope="row" className="px-3 py-4 font-medium text-gray-900 whitespace-wrap dark:text-white">
+                <td className="px-3 py-4 font-medium text-gray-900 whitespace-wrap dark:text-white">
                     {data.user.name} <br />
                     {data.user.email}
                     

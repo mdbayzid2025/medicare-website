@@ -1,4 +1,4 @@
- const doctorData =[
+export const doctorData =[
     {
       "name": "Dr. Sarah Johnson",
       "email": "sarahjohnson@example.com",

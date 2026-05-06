@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import HeroSection from './HeroSection'
 import WorkSection from './WorkSection'
 import About from './About'
@@ -8,7 +8,6 @@ import Doctors from './Doctors'
 import FAQ from './FAQ'
 
 import Testimonial from './Testimonial'
-import axios from 'axios'
 
 const Home = () => {
  
